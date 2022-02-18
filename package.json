@@ -1,0 +1,15 @@
+{
+  "name": "techm-node-demo",
+  "version": "1.0.0",
+  "description": "Demo NodeJS project for TechM trainees Feb 2022 ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vaman Deshmukh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
