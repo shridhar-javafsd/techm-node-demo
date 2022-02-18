@@ -7,6 +7,23 @@ app.get('/', (request, response) => {
     console.log(`Welcome`);
     response.send(`Welcome to TechM NodeJS App at ${port}`);
 });
+
+app.get('/home', (request, response) => {
+    console.log(`Welcome Home`);
+    response.send(`Welcome to TechM NodeJS App home`);
+});
+
+app.get('/contact', (request, response) => {
+    console.log(`Welcome contact`);
+    response.send(`Welcome to TechM NodeJS App contact`);
+});
+
+app.get('/about', (request, response) => {
+    console.log(`Welcome About`);
+    response.send(`Welcome to TechM NodeJS App about`);
+});
+
+
 app.listen(port, () => {
     console.log(`Started...`);
 });
