@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const port = 9999;
-const home = require('./welcome.html');
+
 // app.get(arg1, arg2);
 // app.get('url', () => {});
 
@@ -15,7 +15,7 @@ app.get('/', (request, response) => {
 // http://localhost:9999/home
 app.get('/home', (request, response) => {
     console.log(`Welcome Home`);
-    response.send(home);
+    response.send(`Welcome to TechM NodeJS App home`);
 });
 
 // http://localhost:9999/contact
@@ -33,4 +33,5 @@ app.get('/about', (request, response) => {
 
 app.listen(port, () => {
     console.log(`Started...`);
+    console.log(`Open http://localhost:${port}/ on browser.`)
 });
