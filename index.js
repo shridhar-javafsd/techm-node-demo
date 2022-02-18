@@ -6,6 +6,12 @@ const port = 9999;
 // app.get(arg1, arg2);
 // app.get('url', () => {});
 
+app.use((request, response, next) => {
+    response.header("Access-Control-Allow-Origin", "*");
+    response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 // http://localhost:9999
 app.get('/', (request, response) => {
     console.log(`Welcome`);
